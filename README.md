@@ -1,27 +1,33 @@
 # MapsApp
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 14.0.2.
+ng new mapsApp
 
-## Development server
+ng g m maps
 
-Run `ng serve` for a dev server. Navigate to `http://localhost:4200/`. The application will automatically reload if you change any of the source files.
+ng g c maps/screens/mapScreen --skip-tests
 
-## Code scaffolding
+ng g s maps/services/places --skip-tests
 
-Run `ng generate component component-name` to generate a new component. You can also use `ng generate directive|pipe|service|class|guard|interface|enum|module`.
+ng g c maps/components/mapView --skip-tests 
 
-## Build
+ng g c maps/components/loading --skip-tests 
 
-Run `ng build` to build the project. The build artifacts will be stored in the `dist/` directory.
+ng g c maps/components/btnMyLocation --skip-tests
 
-## Running unit tests
+ng g c maps/components/angularLogo --skip-tests
 
-Run `ng test` to execute the unit tests via [Karma](https://karma-runner.github.io).
+ng g s maps/services/map --skip-tests
 
-## Running end-to-end tests
+ng g c maps/components/searchBar --skip-tests
 
-Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To use this command, you need to first add a package that implements end-to-end testing capabilities.
+ng g c maps/components/searchResult --skip-tests
 
-## Further help
+npm install --save mapbox-gl
 
-To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+npm i --save-dev @types/mapbox-gl
+
+npm run build
+
+https://www.mapbox.com/
+
+https://app.quicktype.io/
